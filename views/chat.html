@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div id="chat-box">
+        <h2 id="welcome">欢迎加入聊天室！</h2>
+        <h3 id="system"></h3>
+        <div class="message-show-box"></div>
+        <div class="message-enter-box">
+            <textarea id="message"></textarea>
+        </div>
+        <div class="message-send-box">
+            <button type="button" id="send">发送</button>
+        </div>
+    </div>
+
+    <div class="nickname">
+        <div class="inner">
+            <h3>请输入您的昵称：</h3>
+            <input type="text" id="nickname">
+            <button id="nickname-btn">确定</button>
+        </div>
+    </div>
+
+    <div class="user-list">
+        <h4>当前在线用户：</h4>
+        <ul></ul>
+    </div>
+
+<script src="/static/js/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.bootcss.com/socket.io/2.0.4/socket.io.js"></script>
+<script src="/static/js/socket.js"></script>
+
+</body>
+</html>
